@@ -1,0 +1,915 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Sprites/background.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Flash.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scripts/Game.gd" type="Script" id=4]
+[ext_resource path="res://Scenes/Indicator.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Sprites/grid.png" type="Texture" id=6]
+[ext_resource path="res://Fonts/JAi_____.TTF" type="DynamicFontData" id=7]
+[ext_resource path="res://Sprites/emergency-meeting3.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/emergency-meeting2.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/emergency-meeting1.png" type="Texture" id=10]
+
+[sub_resource type="DynamicFont" id=1]
+size = 20
+font_data = ExtResource( 7 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 10 ), ExtResource( 9 ), ExtResource( 8 ) ],
+"loop": false,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=2]
+size = 98
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 7 )
+
+[node name="Game" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+offset = Vector2( 570, 320 )
+
+[node name="PlayerButtons" type="GridContainer" parent="."]
+margin_left = 569.103
+margin_top = 176.891
+margin_right = 876.103
+margin_bottom = 483.891
+custom_constants/vseparation = 1
+custom_constants/hseparation = 1
+columns = 7
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Button1" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_right = 43.0
+margin_bottom = 43.0
+
+[node name="Button2" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 44.0
+margin_right = 87.0
+margin_bottom = 43.0
+
+[node name="Button3" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 88.0
+margin_right = 131.0
+margin_bottom = 43.0
+
+[node name="Button4" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 132.0
+margin_right = 175.0
+margin_bottom = 43.0
+
+[node name="Button5" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 176.0
+margin_right = 219.0
+margin_bottom = 43.0
+
+[node name="Button6" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 220.0
+margin_right = 263.0
+margin_bottom = 43.0
+
+[node name="Button7" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 264.0
+margin_right = 307.0
+margin_bottom = 43.0
+
+[node name="Button8" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_top = 44.0
+margin_right = 43.0
+margin_bottom = 87.0
+
+[node name="Button9" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 44.0
+margin_top = 44.0
+margin_right = 87.0
+margin_bottom = 87.0
+
+[node name="Button10" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 88.0
+margin_top = 44.0
+margin_right = 131.0
+margin_bottom = 87.0
+
+[node name="Button11" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 132.0
+margin_top = 44.0
+margin_right = 175.0
+margin_bottom = 87.0
+
+[node name="Button12" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 176.0
+margin_top = 44.0
+margin_right = 219.0
+margin_bottom = 87.0
+
+[node name="Button13" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 220.0
+margin_top = 44.0
+margin_right = 263.0
+margin_bottom = 87.0
+
+[node name="Button14" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 264.0
+margin_top = 44.0
+margin_right = 307.0
+margin_bottom = 87.0
+
+[node name="Button15" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_top = 88.0
+margin_right = 43.0
+margin_bottom = 131.0
+
+[node name="Button16" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 44.0
+margin_top = 88.0
+margin_right = 87.0
+margin_bottom = 131.0
+
+[node name="Button17" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 88.0
+margin_top = 88.0
+margin_right = 131.0
+margin_bottom = 131.0
+
+[node name="Button18" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 132.0
+margin_top = 88.0
+margin_right = 175.0
+margin_bottom = 131.0
+
+[node name="Button19" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 176.0
+margin_top = 88.0
+margin_right = 219.0
+margin_bottom = 131.0
+
+[node name="Button20" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 220.0
+margin_top = 88.0
+margin_right = 263.0
+margin_bottom = 131.0
+
+[node name="Button21" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 264.0
+margin_top = 88.0
+margin_right = 307.0
+margin_bottom = 131.0
+
+[node name="Button22" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_top = 132.0
+margin_right = 43.0
+margin_bottom = 175.0
+
+[node name="Button23" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 44.0
+margin_top = 132.0
+margin_right = 87.0
+margin_bottom = 175.0
+
+[node name="Button24" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 88.0
+margin_top = 132.0
+margin_right = 131.0
+margin_bottom = 175.0
+
+[node name="Button25" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 132.0
+margin_top = 132.0
+margin_right = 175.0
+margin_bottom = 175.0
+
+[node name="Button26" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 176.0
+margin_top = 132.0
+margin_right = 219.0
+margin_bottom = 175.0
+
+[node name="Button27" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 220.0
+margin_top = 132.0
+margin_right = 263.0
+margin_bottom = 175.0
+
+[node name="Button28" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 264.0
+margin_top = 132.0
+margin_right = 307.0
+margin_bottom = 175.0
+
+[node name="Button29" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_top = 176.0
+margin_right = 43.0
+margin_bottom = 219.0
+
+[node name="Button30" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 44.0
+margin_top = 176.0
+margin_right = 87.0
+margin_bottom = 219.0
+
+[node name="Button31" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 88.0
+margin_top = 176.0
+margin_right = 131.0
+margin_bottom = 219.0
+
+[node name="Button32" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 132.0
+margin_top = 176.0
+margin_right = 175.0
+margin_bottom = 219.0
+
+[node name="Button33" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 176.0
+margin_top = 176.0
+margin_right = 219.0
+margin_bottom = 219.0
+
+[node name="Button34" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 220.0
+margin_top = 176.0
+margin_right = 263.0
+margin_bottom = 219.0
+
+[node name="Button35" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 264.0
+margin_top = 176.0
+margin_right = 307.0
+margin_bottom = 219.0
+
+[node name="Button36" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_top = 220.0
+margin_right = 43.0
+margin_bottom = 263.0
+
+[node name="Button37" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 44.0
+margin_top = 220.0
+margin_right = 87.0
+margin_bottom = 263.0
+
+[node name="Button38" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 88.0
+margin_top = 220.0
+margin_right = 131.0
+margin_bottom = 263.0
+
+[node name="Button39" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 132.0
+margin_top = 220.0
+margin_right = 175.0
+margin_bottom = 263.0
+
+[node name="Button40" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 176.0
+margin_top = 220.0
+margin_right = 219.0
+margin_bottom = 263.0
+
+[node name="Button41" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 220.0
+margin_top = 220.0
+margin_right = 263.0
+margin_bottom = 263.0
+
+[node name="Button42" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 264.0
+margin_top = 220.0
+margin_right = 307.0
+margin_bottom = 263.0
+
+[node name="Button43" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_top = 264.0
+margin_right = 43.0
+margin_bottom = 307.0
+
+[node name="Button44" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 44.0
+margin_top = 264.0
+margin_right = 87.0
+margin_bottom = 307.0
+
+[node name="Button45" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 88.0
+margin_top = 264.0
+margin_right = 131.0
+margin_bottom = 307.0
+
+[node name="Button46" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 132.0
+margin_top = 264.0
+margin_right = 175.0
+margin_bottom = 307.0
+
+[node name="Button47" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 176.0
+margin_top = 264.0
+margin_right = 219.0
+margin_bottom = 307.0
+
+[node name="Button48" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 220.0
+margin_top = 264.0
+margin_right = 263.0
+margin_bottom = 307.0
+
+[node name="Button49" parent="PlayerButtons" instance=ExtResource( 2 )]
+margin_left = 264.0
+margin_top = 264.0
+margin_right = 307.0
+margin_bottom = 307.0
+
+[node name="Console" type="GridContainer" parent="."]
+margin_left = 238.724
+margin_top = 179.419
+margin_right = 545.724
+margin_bottom = 486.419
+custom_constants/vseparation = 1
+custom_constants/hseparation = 1
+columns = 7
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Flash1" parent="Console" instance=ExtResource( 3 )]
+margin_right = 43.0
+margin_bottom = 43.0
+
+[node name="Flash2" parent="Console" instance=ExtResource( 3 )]
+margin_left = 44.0
+margin_right = 87.0
+margin_bottom = 43.0
+
+[node name="Flash3" parent="Console" instance=ExtResource( 3 )]
+margin_left = 88.0
+margin_right = 131.0
+margin_bottom = 43.0
+
+[node name="Flash4" parent="Console" instance=ExtResource( 3 )]
+margin_left = 132.0
+margin_right = 175.0
+margin_bottom = 43.0
+
+[node name="Flash5" parent="Console" instance=ExtResource( 3 )]
+margin_left = 176.0
+margin_right = 219.0
+margin_bottom = 43.0
+
+[node name="Flash6" parent="Console" instance=ExtResource( 3 )]
+margin_left = 220.0
+margin_right = 263.0
+margin_bottom = 43.0
+
+[node name="Flash7" parent="Console" instance=ExtResource( 3 )]
+margin_left = 264.0
+margin_right = 307.0
+margin_bottom = 43.0
+
+[node name="Flash8" parent="Console" instance=ExtResource( 3 )]
+margin_top = 44.0
+margin_right = 43.0
+margin_bottom = 87.0
+
+[node name="Flash9" parent="Console" instance=ExtResource( 3 )]
+margin_left = 44.0
+margin_top = 44.0
+margin_right = 87.0
+margin_bottom = 87.0
+
+[node name="Flash10" parent="Console" instance=ExtResource( 3 )]
+margin_left = 88.0
+margin_top = 44.0
+margin_right = 131.0
+margin_bottom = 87.0
+
+[node name="Flash11" parent="Console" instance=ExtResource( 3 )]
+margin_left = 132.0
+margin_top = 44.0
+margin_right = 175.0
+margin_bottom = 87.0
+
+[node name="Flash12" parent="Console" instance=ExtResource( 3 )]
+margin_left = 176.0
+margin_top = 44.0
+margin_right = 219.0
+margin_bottom = 87.0
+
+[node name="Flash13" parent="Console" instance=ExtResource( 3 )]
+margin_left = 220.0
+margin_top = 44.0
+margin_right = 263.0
+margin_bottom = 87.0
+
+[node name="Flash14" parent="Console" instance=ExtResource( 3 )]
+margin_left = 264.0
+margin_top = 44.0
+margin_right = 307.0
+margin_bottom = 87.0
+
+[node name="Flash15" parent="Console" instance=ExtResource( 3 )]
+margin_top = 88.0
+margin_right = 43.0
+margin_bottom = 131.0
+
+[node name="Flash16" parent="Console" instance=ExtResource( 3 )]
+margin_left = 44.0
+margin_top = 88.0
+margin_right = 87.0
+margin_bottom = 131.0
+
+[node name="Flash17" parent="Console" instance=ExtResource( 3 )]
+margin_left = 88.0
+margin_top = 88.0
+margin_right = 131.0
+margin_bottom = 131.0
+
+[node name="Flash18" parent="Console" instance=ExtResource( 3 )]
+margin_left = 132.0
+margin_top = 88.0
+margin_right = 175.0
+margin_bottom = 131.0
+
+[node name="Flash19" parent="Console" instance=ExtResource( 3 )]
+margin_left = 176.0
+margin_top = 88.0
+margin_right = 219.0
+margin_bottom = 131.0
+
+[node name="Flash20" parent="Console" instance=ExtResource( 3 )]
+margin_left = 220.0
+margin_top = 88.0
+margin_right = 263.0
+margin_bottom = 131.0
+
+[node name="Flash21" parent="Console" instance=ExtResource( 3 )]
+margin_left = 264.0
+margin_top = 88.0
+margin_right = 307.0
+margin_bottom = 131.0
+
+[node name="Flash22" parent="Console" instance=ExtResource( 3 )]
+margin_top = 132.0
+margin_right = 43.0
+margin_bottom = 175.0
+
+[node name="Flash23" parent="Console" instance=ExtResource( 3 )]
+margin_left = 44.0
+margin_top = 132.0
+margin_right = 87.0
+margin_bottom = 175.0
+
+[node name="Flash24" parent="Console" instance=ExtResource( 3 )]
+margin_left = 88.0
+margin_top = 132.0
+margin_right = 131.0
+margin_bottom = 175.0
+
+[node name="Flash25" parent="Console" instance=ExtResource( 3 )]
+margin_left = 132.0
+margin_top = 132.0
+margin_right = 175.0
+margin_bottom = 175.0
+
+[node name="Flash26" parent="Console" instance=ExtResource( 3 )]
+margin_left = 176.0
+margin_top = 132.0
+margin_right = 219.0
+margin_bottom = 175.0
+
+[node name="Flash27" parent="Console" instance=ExtResource( 3 )]
+margin_left = 220.0
+margin_top = 132.0
+margin_right = 263.0
+margin_bottom = 175.0
+
+[node name="Flash28" parent="Console" instance=ExtResource( 3 )]
+margin_left = 264.0
+margin_top = 132.0
+margin_right = 307.0
+margin_bottom = 175.0
+
+[node name="Flash29" parent="Console" instance=ExtResource( 3 )]
+margin_top = 176.0
+margin_right = 43.0
+margin_bottom = 219.0
+
+[node name="Flash30" parent="Console" instance=ExtResource( 3 )]
+margin_left = 44.0
+margin_top = 176.0
+margin_right = 87.0
+margin_bottom = 219.0
+
+[node name="Flash31" parent="Console" instance=ExtResource( 3 )]
+margin_left = 88.0
+margin_top = 176.0
+margin_right = 131.0
+margin_bottom = 219.0
+
+[node name="Flash32" parent="Console" instance=ExtResource( 3 )]
+margin_left = 132.0
+margin_top = 176.0
+margin_right = 175.0
+margin_bottom = 219.0
+
+[node name="Flash33" parent="Console" instance=ExtResource( 3 )]
+margin_left = 176.0
+margin_top = 176.0
+margin_right = 219.0
+margin_bottom = 219.0
+
+[node name="Flash34" parent="Console" instance=ExtResource( 3 )]
+margin_left = 220.0
+margin_top = 176.0
+margin_right = 263.0
+margin_bottom = 219.0
+
+[node name="Flash35" parent="Console" instance=ExtResource( 3 )]
+margin_left = 264.0
+margin_top = 176.0
+margin_right = 307.0
+margin_bottom = 219.0
+
+[node name="Flash36" parent="Console" instance=ExtResource( 3 )]
+margin_top = 220.0
+margin_right = 43.0
+margin_bottom = 263.0
+
+[node name="Flash37" parent="Console" instance=ExtResource( 3 )]
+margin_left = 44.0
+margin_top = 220.0
+margin_right = 87.0
+margin_bottom = 263.0
+
+[node name="Flash38" parent="Console" instance=ExtResource( 3 )]
+margin_left = 88.0
+margin_top = 220.0
+margin_right = 131.0
+margin_bottom = 263.0
+
+[node name="Flash39" parent="Console" instance=ExtResource( 3 )]
+margin_left = 132.0
+margin_top = 220.0
+margin_right = 175.0
+margin_bottom = 263.0
+
+[node name="Flash40" parent="Console" instance=ExtResource( 3 )]
+margin_left = 176.0
+margin_top = 220.0
+margin_right = 219.0
+margin_bottom = 263.0
+
+[node name="Flash41" parent="Console" instance=ExtResource( 3 )]
+margin_left = 220.0
+margin_top = 220.0
+margin_right = 263.0
+margin_bottom = 263.0
+
+[node name="Flash42" parent="Console" instance=ExtResource( 3 )]
+margin_left = 264.0
+margin_top = 220.0
+margin_right = 307.0
+margin_bottom = 263.0
+
+[node name="Flash43" parent="Console" instance=ExtResource( 3 )]
+margin_top = 264.0
+margin_right = 43.0
+margin_bottom = 307.0
+
+[node name="Flash44" parent="Console" instance=ExtResource( 3 )]
+margin_left = 44.0
+margin_top = 264.0
+margin_right = 87.0
+margin_bottom = 307.0
+
+[node name="Flash45" parent="Console" instance=ExtResource( 3 )]
+margin_left = 88.0
+margin_top = 264.0
+margin_right = 131.0
+margin_bottom = 307.0
+
+[node name="Flash46" parent="Console" instance=ExtResource( 3 )]
+margin_left = 132.0
+margin_top = 264.0
+margin_right = 175.0
+margin_bottom = 307.0
+
+[node name="Flash47" parent="Console" instance=ExtResource( 3 )]
+margin_left = 176.0
+margin_top = 264.0
+margin_right = 219.0
+margin_bottom = 307.0
+
+[node name="Flash48" parent="Console" instance=ExtResource( 3 )]
+margin_left = 220.0
+margin_top = 264.0
+margin_right = 263.0
+margin_bottom = 307.0
+
+[node name="Flash49" parent="Console" instance=ExtResource( 3 )]
+margin_left = 264.0
+margin_top = 264.0
+margin_right = 307.0
+margin_bottom = 307.0
+
+[node name="ConsoleIndicators" type="GridContainer" parent="."]
+margin_left = 245.897
+margin_top = 95.7372
+margin_right = 538.897
+margin_bottom = 157.737
+custom_constants/vseparation = 4
+custom_constants/hseparation = 4
+columns = 9
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Indicator" parent="ConsoleIndicators" instance=ExtResource( 5 )]
+margin_right = 29.0
+margin_bottom = 29.0
+
+[node name="Indicator2" parent="ConsoleIndicators" instance=ExtResource( 5 )]
+margin_left = 33.0
+margin_right = 62.0
+margin_bottom = 29.0
+
+[node name="Indicator3" parent="ConsoleIndicators" instance=ExtResource( 5 )]
+margin_left = 66.0
+margin_right = 95.0
+margin_bottom = 29.0
+
+[node name="Indicator4" parent="ConsoleIndicators" instance=ExtResource( 5 )]
+margin_left = 99.0
+margin_right = 128.0
+margin_bottom = 29.0
+
+[node name="Indicator5" parent="ConsoleIndicators" instance=ExtResource( 5 )]
+margin_left = 132.0
+margin_right = 161.0
+margin_bottom = 29.0
+
+[node name="Indicator6" parent="ConsoleIndicators" instance=ExtResource( 5 )]
+margin_left = 165.0
+margin_right = 194.0
+margin_bottom = 29.0
+
+[node name="Indicator7" parent="ConsoleIndicators" instance=ExtResource( 5 )]
+margin_left = 198.0
+margin_right = 227.0
+margin_bottom = 29.0
+
+[node name="Indicator8" parent="ConsoleIndicators" instance=ExtResource( 5 )]
+margin_left = 231.0
+margin_right = 260.0
+margin_bottom = 29.0
+
+[node name="Indicator9" parent="ConsoleIndicators" instance=ExtResource( 5 )]
+margin_left = 264.0
+margin_right = 293.0
+margin_bottom = 29.0
+
+[node name="Indicator10" parent="ConsoleIndicators" instance=ExtResource( 5 )]
+margin_top = 33.0
+margin_right = 29.0
+margin_bottom = 62.0
+
+[node name="Indicator11" parent="ConsoleIndicators" instance=ExtResource( 5 )]
+margin_left = 33.0
+margin_top = 33.0
+margin_right = 62.0
+margin_bottom = 62.0
+
+[node name="Indicator12" parent="ConsoleIndicators" instance=ExtResource( 5 )]
+margin_left = 66.0
+margin_top = 33.0
+margin_right = 95.0
+margin_bottom = 62.0
+
+[node name="Indicator13" parent="ConsoleIndicators" instance=ExtResource( 5 )]
+margin_left = 99.0
+margin_top = 33.0
+margin_right = 128.0
+margin_bottom = 62.0
+
+[node name="Indicator14" parent="ConsoleIndicators" instance=ExtResource( 5 )]
+margin_left = 132.0
+margin_top = 33.0
+margin_right = 161.0
+margin_bottom = 62.0
+
+[node name="Indicator15" parent="ConsoleIndicators" instance=ExtResource( 5 )]
+margin_left = 165.0
+margin_top = 33.0
+margin_right = 194.0
+margin_bottom = 62.0
+
+[node name="Indicator16" parent="ConsoleIndicators" instance=ExtResource( 5 )]
+margin_left = 198.0
+margin_top = 33.0
+margin_right = 227.0
+margin_bottom = 62.0
+
+[node name="Indicator17" parent="ConsoleIndicators" instance=ExtResource( 5 )]
+margin_left = 231.0
+margin_top = 33.0
+margin_right = 260.0
+margin_bottom = 62.0
+
+[node name="Indicator18" parent="ConsoleIndicators" instance=ExtResource( 5 )]
+margin_left = 264.0
+margin_top = 33.0
+margin_right = 293.0
+margin_bottom = 62.0
+
+[node name="ButtonIndicators" type="GridContainer" parent="."]
+margin_left = 576.0
+margin_top = 96.0
+margin_right = 869.0
+margin_bottom = 158.0
+custom_constants/vseparation = 4
+custom_constants/hseparation = 4
+columns = 9
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Indicator" parent="ButtonIndicators" instance=ExtResource( 5 )]
+margin_right = 29.0
+margin_bottom = 29.0
+
+[node name="Indicator2" parent="ButtonIndicators" instance=ExtResource( 5 )]
+margin_left = 33.0
+margin_right = 62.0
+margin_bottom = 29.0
+
+[node name="Indicator3" parent="ButtonIndicators" instance=ExtResource( 5 )]
+margin_left = 66.0
+margin_right = 95.0
+margin_bottom = 29.0
+
+[node name="Indicator4" parent="ButtonIndicators" instance=ExtResource( 5 )]
+margin_left = 99.0
+margin_right = 128.0
+margin_bottom = 29.0
+
+[node name="Indicator5" parent="ButtonIndicators" instance=ExtResource( 5 )]
+margin_left = 132.0
+margin_right = 161.0
+margin_bottom = 29.0
+
+[node name="Indicator6" parent="ButtonIndicators" instance=ExtResource( 5 )]
+margin_left = 165.0
+margin_right = 194.0
+margin_bottom = 29.0
+
+[node name="Indicator7" parent="ButtonIndicators" instance=ExtResource( 5 )]
+margin_left = 198.0
+margin_right = 227.0
+margin_bottom = 29.0
+
+[node name="Indicator8" parent="ButtonIndicators" instance=ExtResource( 5 )]
+margin_left = 231.0
+margin_right = 260.0
+margin_bottom = 29.0
+
+[node name="Indicator9" parent="ButtonIndicators" instance=ExtResource( 5 )]
+margin_left = 264.0
+margin_right = 293.0
+margin_bottom = 29.0
+
+[node name="Indicator10" parent="ButtonIndicators" instance=ExtResource( 5 )]
+margin_top = 33.0
+margin_right = 29.0
+margin_bottom = 62.0
+
+[node name="Indicator11" parent="ButtonIndicators" instance=ExtResource( 5 )]
+margin_left = 33.0
+margin_top = 33.0
+margin_right = 62.0
+margin_bottom = 62.0
+
+[node name="Indicator12" parent="ButtonIndicators" instance=ExtResource( 5 )]
+margin_left = 66.0
+margin_top = 33.0
+margin_right = 95.0
+margin_bottom = 62.0
+
+[node name="Indicator13" parent="ButtonIndicators" instance=ExtResource( 5 )]
+margin_left = 99.0
+margin_top = 33.0
+margin_right = 128.0
+margin_bottom = 62.0
+
+[node name="Indicator14" parent="ButtonIndicators" instance=ExtResource( 5 )]
+margin_left = 132.0
+margin_top = 33.0
+margin_right = 161.0
+margin_bottom = 62.0
+
+[node name="Indicator15" parent="ButtonIndicators" instance=ExtResource( 5 )]
+margin_left = 165.0
+margin_top = 33.0
+margin_right = 194.0
+margin_bottom = 62.0
+
+[node name="Indicator16" parent="ButtonIndicators" instance=ExtResource( 5 )]
+margin_left = 198.0
+margin_top = 33.0
+margin_right = 227.0
+margin_bottom = 62.0
+
+[node name="Indicator17" parent="ButtonIndicators" instance=ExtResource( 5 )]
+margin_left = 231.0
+margin_top = 33.0
+margin_right = 260.0
+margin_bottom = 62.0
+
+[node name="Indicator18" parent="ButtonIndicators" instance=ExtResource( 5 )]
+margin_left = 264.0
+margin_top = 33.0
+margin_right = 293.0
+margin_bottom = 62.0
+
+[node name="FlashTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="PauseTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="StartTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="ClearIndicatorsTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="FailureTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Grid" type="Sprite" parent="."]
+visible = false
+position = Vector2( 392.32, 332.729 )
+texture = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="."]
+visible = false
+margin_left = 16.0
+margin_top = 576.0
+margin_right = 468.0
+margin_bottom = 642.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Press the Buttons in the Correct Sequence
+Press 'ENTER' to Toggle Grid
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+visible = false
+margin_left = 16.0
+margin_top = 544.0
+margin_right = 468.0
+margin_bottom = 610.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "All Credit to Innersloth for Among Us
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Emergency" type="Node2D" parent="."]
+visible = false
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Emergency"]
+frames = SubResource( 3 )
+centered = false
+
+[node name="Label" type="Label" parent="Emergency"]
+margin_left = 282.091
+margin_top = 243.182
+margin_right = 937.091
+margin_bottom = 444.182
+custom_fonts/font = SubResource( 2 )
+text = "EMERGENCY 
+MEETING"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="timeout" from="FlashTimer" to="." method="_on_FlashTimer_timeout"]
+[connection signal="timeout" from="PauseTimer" to="." method="_on_PauseTimer_timeout"]
+[connection signal="timeout" from="StartTimer" to="." method="_on_StartTimer_timeout"]
+[connection signal="timeout" from="ClearIndicatorsTimer" to="." method="_on_ClearIndicatorsTimer_timeout"]
+[connection signal="timeout" from="FailureTimer" to="." method="_on_FailureTimer_timeout"]

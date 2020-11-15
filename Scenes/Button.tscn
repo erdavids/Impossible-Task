@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Sprites/input-key.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Button.gd" type="Script" id=2]
+[ext_resource path="res://Sprites/input-key-pressed.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/input-key-disabled.png" type="Texture" id=4]
+
+[node name="Button" type="TextureButton"]
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 3 )
+texture_disabled = ExtResource( 4 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="." to="." method="_on_Button_pressed"]
